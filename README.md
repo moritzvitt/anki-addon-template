@@ -5,6 +5,7 @@ A clean starter template for building future Anki add-ons.
 This repository is designed to give you the repeatable pieces you usually want at the beginning of an add-on project:
 
 - a minimal runnable add-on skeleton
+- a reusable Anki editor toolbar button template
 - manifest and config files
 - changelog and release-description docs
 - VS Code tasks for validation and packaging
@@ -16,6 +17,7 @@ This repository is designed to give you the repeatable pieces you usually want a
 starter-repo/
 ├── __init__.py
 ├── addon.py
+├── editor_buttons.py
 ├── manifest.json
 ├── config.json
 ├── config.md
@@ -32,13 +34,15 @@ starter-repo/
 1. Rename the folder to your add-on package name.
 2. Update [`manifest.json`](./manifest.json) with your package and display name.
 3. Replace the sample menu action in [`addon.py`](./addon.py) with your real hooks and behavior.
-4. Adjust [`config.json`](./config.json) and [`config.md`](./config.md) to match your add-on settings.
-5. Update [`docs/release-description.md`](./docs/release-description.md) before publishing.
+4. Reuse or extend the editor toolbar template in [`editor_buttons.py`](./editor_buttons.py) if your add-on adds buttons inside Anki's note editor.
+5. Adjust [`config.json`](./config.json) and [`config.md`](./config.md) to match your add-on settings.
+6. Update [`docs/release-description.md`](./docs/release-description.md) before publishing.
 
 ## Development Notes
 
 - Anki loads the add-on from the folder root and executes [`__init__.py`](./__init__.py).
 - Keep add-on code in small focused modules as the project grows.
+- [`editor_buttons.py`](./editor_buttons.py) shows the `gui_hooks.editor_did_init_buttons` pattern and wraps `editor.addButton(...)` in a reusable helper.
 - Use the VS Code tasks to validate Python files and package a `.ankiaddon` archive.
 
 ## Packaging

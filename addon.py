@@ -4,13 +4,17 @@ from aqt import mw
 from aqt.qt import QAction
 from aqt.utils import showInfo
 
+from .editor_buttons import register_editor_buttons
+
 
 def _show_starter_message() -> None:
     showInfo("Your Anki add-on starter is loaded. Replace this action with real behavior.")
 
 
 def register() -> None:
-    """Register a small sample action so the template is visibly active."""
+    """Register sample hooks so the template is visibly active."""
+    register_editor_buttons()
+
     if mw is None:
         return
 
