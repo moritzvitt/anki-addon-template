@@ -1,5 +1,3 @@
 {
-  "enabled": true,
-  "debug": false,
-  "example_note_types": []
+  "theme_preset": "off"
 }

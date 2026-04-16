@@ -1,5 +1,14 @@
 # Anki Add-on Starter Repo
 
+<p align="center">
+  <a href="https://buymeacoffee.com/moritzowitsch">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000" alt="Buy Me a Coffee" />
+  </a>
+  <a href="https://github.com/moritzvitt">
+    <img src="https://img.shields.io/badge/GitHub-moritzvitt-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub moritzvitt" />
+  </a>
+</p>
+
 A clean starter template for building future Anki add-ons.
 
 This repository is designed to give you the repeatable pieces you usually want at the beginning of an add-on project:
